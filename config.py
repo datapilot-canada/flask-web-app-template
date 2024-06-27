@@ -33,8 +33,8 @@ logger = logging.getLogger(__name__)
 
 
 # # Redis Cache Connection Details TODO: Move to Key Vault
-# myHostname = "datapilot-webapp-cc.redis.cache.windows.net" #os.environ["KV_REDIS_HOSTNAME_SECRET_NAME"]
-# myPassword = "9tbW9lwc5ImIFdE4oXR6V7fgQWIFrT4P9AzCaFh8HrA="  #os.environ["KV_REDIS_PASSWORD_SECRET_NAME"]
+# myHostname = os.environ["KV_REDIS_HOSTNAME_SECRET_NAME"]
+# myPassword = os.environ["KV_REDIS_PASSWORD_SECRET_NAME"]
 
 
 def export_env_variables():    
